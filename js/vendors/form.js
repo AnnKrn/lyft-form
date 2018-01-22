@@ -32,9 +32,11 @@ function generateCode (e) {
     $phoneInput.val("");
 
     // genrar numero aleatorio y redondearlo a entero
-    var code = "LAB" + Math.floor(Math.random() * 1000);
+    var code = "LAB - " + Math.floor(Math.random() * 1000);
     // console.log(code)
     alert("Tu código: " + code)
+    // redereccion a siguiente vista, al cerrar alert
+    location.href = "code.html";
 };
 
 $(document).ready(loadPage);
