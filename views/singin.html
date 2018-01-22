@@ -13,41 +13,40 @@
     <body>
         <main class="container-fluid">
             <div class="row align-items-center">
-                <a class="btn col-1" href="form.html" role="button"><i class="fa fa-chevron-left fa-3x"></i></a>
+                <a class="btn col-1" href="code.html" role="button"><i class="fa fa-chevron-left fa-3x"></i></a>
                 <div class="col-11">
                     <div class="row">
-                        <h5 class="col-12 text-center" >Verify phone number</h5>
+                        <h5 class="col-12 text-center" >Sing Up</h5>
                         <p class="col-12 text-center">Join now for free ride credit</p>
                     </div>
                 </div>
             </div>
             <hr>
             <div class="row">
-                <form id="phone_form" class="col-12">
+                <!-- <form id="phone_form" class="col-12">
                     <div class="row">
-                        <div class="col-3 offset-3 mt-4">
-                            <h5>LAB -</h5>
-                        </div>
                         <div class="form-group col-3">
-                            <label for="code_input"></label>
-                            <input type="number" class="form-control" id="code_input" aria-describedby="" placeholder="_ _ _">
+                            <select class="custom-select custom-select-sm mt-4">
+                                <option selected></option>
+                                <option value="mexico"><img src="../assets/images/mexicoicon.jpg" alt="" class="icon-size"></option>
+                                <option value="colombia">Colombia</option>
+                                <option value="peru">Peru</option>
+                            </select>
                         </div>
+                        <div class="form-group col-9">
+                            <label for=""></label>
+                            <input type="number" class="form-control" id="phone_input" aria-describedby="emailHelp" placeholder="55-555-555-55">
+                            <small id="phone" class="form-text text-muted">We'll send a text to verify your phone.</small>
+                        </div>
+
                     </div>
-                    <div class="row">
-                        <small id="phone" class="col-9 offset-3 mb-5">Enter de code sent to +52</small>
-                    </div>
-                    <div class="row justify-content-center">
-                        <button id="btn_resend" type="submit" class="btn btn-secondary btn-sm" disabled>Resend Code</button>
-                    </div>
-                    <div class="row align-items-end justify-content-center">
-                        <button id="btn_code" type="submit" class="btn btn-block col-10 " disabled>NEXT</button>
-                    </div>
-                </form>
+                    <button id="btn_phone" type="submit" class="btn btn-block" disabled>Next</button>
+                </form> -->
             </div>
         </main>
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="../js/vendors/code.js"></script>
+        <script src="../js/vendors/singin.js"></script>
     </body>
 </html>
