@@ -1,9 +1,8 @@
-#cover_img {
-    background-image: url(../../assets/images/sp.gif);
+#back-img {
+    background-image: url(../../assets/images/lyftcover.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100vh;
 }
-
