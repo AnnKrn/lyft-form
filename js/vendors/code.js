@@ -22,12 +22,17 @@ function validCode () {
         $codedBtn.prop("disabled", true)
     };
 
-};
+}; 
 
 function code () {
     // habilita boton de resend
     $resendBtn.prop("disabled", false);
 };
+
+// function getCode (numberCode) {
+//     console.log(numberCode);
+
+// };
 
 function sendOtherCode (e) {
     e.preventDefault();
@@ -38,6 +43,7 @@ function sendOtherCode (e) {
     $codeInput.val("");
     // funcion que activa boton resend code
     code();
+    // getCode();
     //dehabilita boton de enviar
     $codedBtn.prop("disabled", true)
     // redereccionar a siguiente vista

@@ -5,7 +5,7 @@ var $phoneForm = $("#phone_form");
 function loadPage () {
     $phoneInput.keyup(validPhone)
     // console.log('hola')
-    $phoneForm.submit(generateCode)
+    $phoneForm.submit(sendCode)
 };
 
 function validPhone () {
@@ -22,18 +22,26 @@ function validPhone () {
         $("#btn_phone").prop("disabled", true)
     }
 };
+// function generateCode () {
+//     // genrar numero aleatorio y redondearlo a entero
+//     var numberCode = Math.floor((Math.random() * 999) + 99);
+    
+//     var code =  "LAB - " + numberCode;
+//     // return numberCode
+// }
 
-function generateCode (e) {
+function sendCode (e) {
     e.preventDefault();
-
+    
     // limpiar input
     // si dejo .val(" ") aparece esto:
     // jquery-3.2.1.min.js:4 The specified value " " is not a valid number. The value must match to the following regular expression: -?(\d+|\d+\.\d+|\.\d+)([eE][-+]?\d+)?
     $phoneInput.val("");
-
     // genrar numero aleatorio y redondearlo a entero
-    var code = "LAB - " + Math.floor(Math.random() * 1000);
-    // console.log(code)
+    var numberCode = Math.floor((Math.random() * 999) + 99);
+    
+    var code =  "LAB - " + numberCode;
+        
     alert("Tu código: " + code)
     // redereccion a siguiente vista, al cerrar alert
     location.href = "code.html";
