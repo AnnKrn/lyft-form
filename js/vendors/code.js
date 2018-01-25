@@ -11,12 +11,10 @@ function loadPage () {
     $codeForm.submit(sendOtherCode);
 };
 
-function validCode (/*numberCode*/) {
-    // console.log(numberCode) devuelve un objeto de jquery, por??
+function validCode () {
     // validar que no se active el boton si ingresa texto
     //cuando esten los tres numeros se habilita el boton de envio
-    if ($(this).val().length == 3 /*&& $("#code_input").val() == numberCode*/) {
-        // console.log(numberCode)
+    if ($(this).val().length = 3) {
         $codedBtn.prop("disabled", false)
         $resendBtn.prop("disabled", true)
         // $("#btn_code").text("Resend Code")
@@ -24,31 +22,26 @@ function validCode (/*numberCode*/) {
         $codedBtn.prop("disabled", true)
     };
 
-}; 
+};
 
 function code () {
     // habilita boton de resend
     $resendBtn.prop("disabled", false);
 };
 
-function sendOtherCode (e, /*numberCode*/) {
+function sendOtherCode (e) {
     e.preventDefault();
     // guardar valor ingresado para despues
     var $enterCode = $codeInput.val();
     // console.log($enterCode);
     // linpiar input
     $codeInput.val("");
-    code();
     // funcion que activa boton resend code
+    code();
     //dehabilita boton de enviar
     $codedBtn.prop("disabled", true)
     // redereccionar a siguiente vista
-    // if ($enterCode == numberCode) {
-    //     nextForm();
-    // } else {
-    //     alert("Ingresa código correcto")
-    // }
-    nextForm ();
+    nextForm();
 };
 
 function nextForm () {
